@@ -1,0 +1,7 @@
+
+/* refactor width */
+.ip-address-container {
+    width: 8dvw;
+    border-radius: 50%;
+    overflow: hidden;
+}

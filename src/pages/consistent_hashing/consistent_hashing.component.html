@@ -1,0 +1,37 @@
+
+
+<page [gap]="5">
+    <h1>Consistent Hashing</h1>
+    
+    <grid [fullWidth]="true">
+
+        <grid-item [lg]="8">
+            <circle></circle>
+        </grid-item>
+
+        <grid-item [lg]="4">
+
+            <hidden-stack>
+                @for (entry of this.implementation.implementation; track entry; let i = $index) {
+                    <hidden-stack-item [id]="i" [zIndex]="( 5 - i )">
+                        @if (entry.type === "case") {
+                            <paper [elevation]="(5 - i)">
+                                <h1>Item {{ i }} {{ $index }}</h1>
+                                <p>{{ entry.when }}</p>
+                                <div>
+                                    <ul>
+                                        @for (solution of entry.solution; track solution) {
+                                            <li>{{ solution }}</li>
+                                        }
+                                    </ul>
+                                </div>
+                            </paper>
+                        }
+                    </hidden-stack-item>
+                }
+            </hidden-stack>
+            
+            <h1>Side Bar</h1>
+        </grid-item>
+    </grid>
+</page>

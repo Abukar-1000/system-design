@@ -1,0 +1,40 @@
+
+
+<div class="circle-container">
+    <div class="circle">
+        <div #centerRef class="circle-center">
+            <!-- <p>( {{ this.centerState().x }} , {{ this.centerState().y }} )</p> -->
+        </div>
+        
+        <tick-ring></tick-ring>
+        
+        <node-provider></node-provider>
+        <div>
+            <ip-address [username]="'user1'"></ip-address>
+        </div>
+
+        <ng-content></ng-content>
+        @for(item of nodes; track item) {
+            @if (item == "Top") {
+                <node class="circle-item top">
+                    <p>{{ item }}</p>
+                </node>
+            } 
+            @else if (item == "Right") {
+                <node class="circle-item right">
+                    <p>{{ item }}</p>
+                </node>
+            }
+            @else if (item == "Bottom") {
+                <node class="circle-item bottom">
+                    <p>{{ item }}</p>
+                </node>
+            }
+            @else if (item == "Left") {
+                <node class="circle-item left">
+                    <p>{{ item }}</p>
+                </node>
+            }
+        }
+    </div>
+</div>

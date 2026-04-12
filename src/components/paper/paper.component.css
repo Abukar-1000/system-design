@@ -1,0 +1,10 @@
+
+
+.paper {
+    border-radius: 10px;
+    /* width: 300px; */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    padding: var(--padding);
+}

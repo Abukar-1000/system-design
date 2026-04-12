@@ -1,0 +1,47 @@
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.circle {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.circle-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+.circle-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top {
+  top: 0%;
+}
+
+.right {
+  left: 100%;
+}
+
+.bottom {
+  top: 100%;
+}
+
+.left {
+  left: 0%;
+}

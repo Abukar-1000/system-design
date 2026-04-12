@@ -1,0 +1,12 @@
+
+
+.node {
+    width: var(--width);
+    height: var(--height);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

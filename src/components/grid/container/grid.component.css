@@ -1,0 +1,10 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+.grid-space {
+    width: var(--width);
+}

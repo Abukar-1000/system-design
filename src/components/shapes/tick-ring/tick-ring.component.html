@@ -1,0 +1,6 @@
+
+<div #tickRing class="tick-ring">
+    @for( tick of this.tickService.getTicks(); track tick) {
+        <tick [top]="tick.top" [left]="tick.left" [angle]="tick.angle"></tick>
+    }
+</div>
